@@ -1,0 +1,38 @@
+{
+	"name": "dcandotti/how-many-pills",
+	"description": "How many pills I have left",
+	"type": "library",
+	"homepage": "https://github.com/dcandotti/how-many-pills",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Darío Candotti",
+			"email": "dario@candotti.dev",
+			"homepage": "https://dario.candotti.dev",
+			"role": "Developer"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/dcandotti/how-many-pills/issues"
+	},
+	"require": {
+		"php": ">=7.3"
+	},
+	"require-dev": {
+		"dcandotti/punit": "dev-master"
+	},
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/dcandotti/punit"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"howmanypills\\": "src/"
+		}
+	},
+	"bin": [
+		"bin/howmanypills"
+	]
+}

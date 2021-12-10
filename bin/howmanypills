@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+require_once(dirname(__DIR__) . "/vendor/autoload.php");
+
+$home = $_SERVER['HOME'];
+$filename = $home . DIRECTORY_SEPARATOR . ".pills";
+$stream = fopen($filename, file_exists($filename) ? 'r' : 'w+');
+
+$shipment = null;
+while (($line = fgetcsv($stream, 0, ';')) !== false) {
+	$shipment = new howmanypills\Shipment(new howmanypills\DDMMYYYY($line[0]), intval($line[1]), $shipment);
+}
+
+if ($shipment === null) die("No info provided");
+
+echo (new howmanypills\Pills($shipment))->intValue();

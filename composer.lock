@@ -1,0 +1,77 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "4544751f5b0fba3b5fc2c55f20756adb",
+    "packages": [],
+    "packages-dev": [
+        {
+            "name": "dcandotti/punit",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dcandotti/punit.git",
+                "reference": "b0df2b9aaaa734bc6ca98cd478f508fcfb25428d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dcandotti/punit/zipball/b0df2b9aaaa734bc6ca98cd478f508fcfb25428d",
+                "reference": "b0df2b9aaaa734bc6ca98cd478f508fcfb25428d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "default-branch": true,
+            "bin": [
+                "bin/punit"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "punit\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Darío Candotti",
+                    "email": "dario@candotti.dev",
+                    "homepage": "https://dario.candotti.dev",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A puny PHP testing framework",
+            "homepage": "https://github.com/dcandotti/punit",
+            "keywords": [
+                "phpunit",
+                "punit",
+                "tdd",
+                "test",
+                "testing",
+                "xunit"
+            ],
+            "support": {
+                "issues": "https://github.com/dcandotti/punit/issues",
+                "source": "https://github.com/dcandotti/punit/tree/master"
+            },
+            "time": "2021-12-09T22:57:58+00:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "dcandotti/punit": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=7.3"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}
